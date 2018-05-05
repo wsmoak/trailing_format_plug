@@ -6,13 +6,13 @@ defmodule TrailingFormatPlug.Mixfile do
       app: :trailing_format_plug,
       version: "0.0.4",
       elixir: ">= 1.0.0",
-      deps: deps,
+      deps: deps(),
       package: [
         contributors: ["Michael Schaefermeyer"],
         licenses: ["Apache 2.0"],
         links: %{"Github" => "http://github.com/mschae/trailing_format_plug"}
       ],
-      description: description
+      description: description()
      ]
   end
 
