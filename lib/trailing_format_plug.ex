@@ -3,6 +3,8 @@ defmodule TrailingFormatPlug do
 
   def init(options), do: options
 
+  def call(%{path_info: []}=conn, _opts), do: conn
+
   def call(conn, opts) do
     id_param = opts[:param] || "id"
 
